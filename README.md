@@ -31,7 +31,8 @@
 * 네이버 지도 API v3 : [링크](https://navermaps.github.io/maps.js.ncp/docs/index.html)
 
 ## 사용 기술
-* Spring Boot
-* MySQL
+* Java 11
+* Spring Boot 2.7.18
+* MySQL 8.0
 * Docker
 * NHN Cloud
