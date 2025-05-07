@@ -9,9 +9,11 @@
 * 문화시설
 * 지하철 역
 * 공원
-* 전기차충전소, 주유소
-* 대규모점포 (대형마트, 시장, 백화점 등)
+* 전기차 충전소
+* 주유소
+* 대규모점포 (대형마트, 시장, 백화점 포함)
 * 빕구르망 식당 (미슐랭이 지정한 가성비 좋은 맛집)
+* 우수음식점
 
 우리집 1.5km 이내에 있으면 근처 시설로 확인하실 수 있어요.
 
@@ -24,13 +26,14 @@
 * 전기차 충전소 : [서울시 전기차 충전소 정보](https://data.seoul.go.kr/dataList/OA-21712/S/1/datasetView.do)
 * 대규모점포 : [서울시 대규모점포 인허가 정보](https://data.seoul.go.kr/dataList/OA-16096/S/1/datasetView.do)
 * 주유소 : [서울시 주유소 현황](https://data.seoul.go.kr/dataList/OA-22251/F/1/datasetView.do)
+* 우수음식점 : [식약처 음식점 위생등급 지정 현황 (2025. 4. 25. 기준)](https://www.mfds.go.kr/brd/m_74/view.do?seq=45007&srchFr=&srchTo=&srchWord=%EC%9C%84%EC%83%9D%EB%93%B1%EA%B8%89&srchTp=0&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&Data_stts_gubun=C9999&page=1)
 
 ## API
 * 네이버 지도 API v3
 
 ## 기술
-* Java 11
-* Spring Boot 2.7.18
-* MySQL 8.0
+* Java
+* Spring Boot
+* MySQL
 * Docker
 * NHN Cloud
