@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4i0jsmerj6&submodules=geocoder"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps-geocoder.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/map-search.css">
+    <link rel="icon" href="/img/place-marker/favicon.svg" type="image/x-icon">
+    <title>우리집 근처</title>
+</head>
+<body>
+<nav class="nav">
+    <div class="nav-logo">
+        <a href="#">
+            <img src="/img/place-marker/logo.png" alt="nearmyhome-logo">
+        </a>
+    </div>
+    <div>
+        <a href="http://nearmyhome.site">
+            <span class="nav-logo-font">우리집 근처</span>
+        </a>
+    </div>
+    <div>
+        <ul>
+            <li><a href="#" class="nav-anchor">도움말</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="naver-map">
+    <div id="map" style="height: calc(100vh - 140px); width: 95%; margin: 0 auto;">
+        <div class="search-wrapper">
+            <div class="search-bar">
+                <input id="address" type="text" placeholder="/ 를 눌러 주소를 입력해주세요."
+                       value="" autocomplete="off" spellcheck="false">
+                <button id="submit" type="button">
+                    <img src="/img/info-box-icon/search-button.png" alt="검색">
+                </button>
+            </div>
+            <div class="search-current-location">
+                <img src="/img/search-bar-icon/current-location.png"/>
+                <div class="tooltip-text">현재 위치로 검색</div>
+            </div>
+            <div class="reset-map">
+                <img src="/img/search-bar-icon/reset.png"/>
+                <div class="tooltip-text">지도 초기화</div>
+            </div>
+        </div>
+        <div class="facility-container">
+            <div class="facility-bar">
+                <button class="facility-button active" data-type="Park">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/park.png" alt="공원">
+                    </div>
+                    <div class="facility-label">공원</div>
+                </button>
+                <button class="facility-button active" data-type="SubwayStation">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/subway-station.png" alt="지하철">
+                    </div>
+                    <div class="facility-label">지하철</div>
+                </button>
+                <button class="facility-button active" data-type="School">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/school.png" alt="초등학교">
+                    </div>
+                    <div class="facility-label active">초등학교</div>
+                </button>
+                <button class="facility-button active" data-type="BibGourmand">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/bib-gourmand-remove.png"
+                             style="width: 40px; height: 40px;"
+                             alt="빕 구르망">
+                    </div>
+                    <div class="facility-label active">빕 구르망
+                        <div class="tooltip-container">
+                            <div class="tooltip-circle">?</div>
+                            <div class="tooltip-text">합리적인 가격에 맛있는 음식을 제공하는 미슐랭 식당이에요.</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="facility-button" data-type="Hospital">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/hospital.png" alt="병원">
+                    </div>
+                    <div class="facility-label">병원</div>
+                </button>
+                <button class="facility-button" data-type="LargeRetailStore">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/store.png" alt="대형마트">
+                    </div>
+                    <div class="facility-label">대형 마트</div>
+                </button>
+                <button class="facility-button" data-type="CulturalPlace">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/cultural-place.png" alt="문화 공간">
+                    </div>
+                    <div class="facility-label">문화 공간</div>
+                </button>
+                <button class="facility-button" data-type="ExcellentRestaurant">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/restaurant.png"
+                             style="width: 40px; height: 40px;"
+                             alt="우수음식점">
+                    </div>
+                    <div class="facility-label">우수음식점
+                        <div class="tooltip-container">
+                            <div class="tooltip-circle">?</div>
+                            <div class="tooltip-text">식약처에서 지정한 위생등급이 우수한 음식점이에요.</div>
+                        </div>
+                    </div>
+                </button>
+                <button class="facility-button" data-type="GasStation">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/gas-station.png" alt="주유소">
+                    </div>
+                    <div class="facility-label">주유소</div>
+                </button>
+                <button class="facility-button" data-type="EvChargingStation">
+                    <div class="facility-icon">
+                        <img src="/img/place-marker/ev-charging-station.png" alt="전기차 충전소">
+                    </div>
+                    <div class="facility-label">충전소</div>
+                </button>
+            </div>
+        </div>
+        <div id="info-box">
+            <div id="info-box-content"></div>
+            <button id="info-box-close">
+                <img src="/img/place-marker/close.png" alt="닫기">
+            </button>
+        </div>
+    </div>
+</div>
+<script src="/js/map-search.js"></script>
+</body>
+</html>
