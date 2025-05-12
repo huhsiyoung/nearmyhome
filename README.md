@@ -32,9 +32,9 @@
 ## API
 * 네이버 지도 API v3
 
-## 기술
-* Java
-* Spring Boot
+## 이용 기술
+* Java 11
+* Spring Boot 2.7.18
 * MySQL
 * Docker
 * NHN Cloud
