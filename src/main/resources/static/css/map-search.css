@@ -236,6 +236,8 @@ a:hover {
     width: 25px;
     height: 25px;
     transition: filter 0.2s;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 #info-box {
@@ -341,6 +343,8 @@ a:hover {
     width: 25px;
     height: 25px;
     transition: filter 0.2s;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 .search-current-location img:hover,
