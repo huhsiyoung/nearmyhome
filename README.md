@@ -26,7 +26,7 @@
 * 전기차 충전소 : [서울시 전기차 충전소 정보](https://data.seoul.go.kr/dataList/OA-21712/S/1/datasetView.do)
 * 대규모점포 : [서울시 대규모점포 인허가 정보](https://data.seoul.go.kr/dataList/OA-16096/S/1/datasetView.do)
 * 주유소 : [서울시 주유소 현황](https://data.seoul.go.kr/dataList/OA-22251/F/1/datasetView.do)
-* 우수음식점 : [식약처 음식점 위생등급 지정 현황 (2025. 4. 25. 기준)](https://www.mfds.go.kr/brd/m_74/view.do?seq=45007&srchFr=&srchTo=&srchWord=%EC%9C%84%EC%83%9D%EB%93%B1%EA%B8%89&srchTp=0&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&Data_stts_gubun=C9999&page=1)
+* 우수음식점 : [식약처 음식점 위생등급 지정 현황](https://www.mfds.go.kr/brd/m_74/view.do?seq=45007&srchFr=&srchTo=&srchWord=%EC%9C%84%EC%83%9D%EB%93%B1%EA%B8%89&srchTp=0&itm_seq_1=0&itm_seq_2=0&multi_itm_seq=0&company_cd=&company_nm=&Data_stts_gubun=C9999&page=1)
 * 빕 구르망 : [미쉐린 가이드](https://guide.michelin.com/kr/ko/restaurants/bib-gourmand)
 
 ## API
