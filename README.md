@@ -1,4 +1,7 @@
-# 우리집 근처 <a href="https://nearmyhome.site" target="_blank" style="text-decoration: none;">🔗 링크</a>
+# 우리집 근처 <a href="https://nearmyhome.site" target="_blank" style="text-decoration: none;">🔗 링크</a> - 현재 사이트 중단
+
+![image](https://github.com/user-attachments/assets/31ed4ce1-186d-469b-bd02-0acfc11c5a52)
+
 서울에 있는 집 근처 시설을 한 눈에 확인할 수 있는 지도 서비스입니다.   
 지도에서 우리집을 검색하면 주변의 다양한 시설을 확인하실 수 있습니다.  
 공공데이터를 이용해 만들었습니다. 데이터 출처는 아래 링크를 참고해주세요.  
