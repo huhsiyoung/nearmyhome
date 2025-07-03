@@ -1,4 +1,4 @@
-# 우리집 근처 <a href="https://nearmyhome.site" target="_blank" style="text-decoration: none;">🔗 링크</a> - 현재 사이트 중단
+# 우리집 근처 <a href="https://nearmyhome.site" target="_blank" style="text-decoration: none;">🔗 링크</a> - 웹사이트 중단
 
 ![image](https://github.com/user-attachments/assets/31ed4ce1-186d-469b-bd02-0acfc11c5a52)
 
