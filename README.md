@@ -28,4 +28,3 @@
 * Spring Boot 2.7.18
 * MySQL
 * Docker
-* NHN Cloud
